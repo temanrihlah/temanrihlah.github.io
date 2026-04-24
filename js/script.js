@@ -189,9 +189,13 @@
 
     var swiper = new Swiper(".testimonial-swiper", {
       loop: true,
-      navigation: {
-        nextEl: ".next-button",
-        prevEl: ".prev-button",
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".testimonial-swiper-pagination",
+        clickable: true,
       },
     });
 

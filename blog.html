@@ -15,11 +15,11 @@
     <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/vendor.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/premium.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- script
-    ================================================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="js/modernizr.js"></script>
   </head>
   <body>
@@ -29,78 +29,50 @@
       </div>
     </div>
 
-   
-    <header id="header">
-      <div id="header-wrap">
+    <!-- Modern Header -->
+    <header id="header" class="header-modern">
+      <div class="container d-flex align-items-center justify-content-between header-inner">
+        <div class="logo-wrap">
+          <a href="index.html">
+            <img src="images/main-logo.png" alt="Rihlah Mulia Logo" class="nav-logo">
+          </a>
+        </div>
         
-        <nav class="primary-nav padding-small">
-          <div class="container">
-            <div class="row d-flex align-items-center">
-              <div class="col-lg-2 col-md-2">
-                <div class="main-logo">
-                  <a href="index.html">
-                    <img src="images/main-logo.png" alt="logo">
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-10">
-                <div class="navbar">
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle">
+          <i class="fa fa-bars"></i>
+        </div>
 
-                  <div id="main-nav" class="stellarnav d-flex justify-content-end right">
-                    <ul class="menu-list">
-
-                      <li class="menu-item has-sub">
-                        <a href="index.html" class="item-anchor  d-flex align-item-center" data-effect="Home">Beranda </a>
-                        
-                      </li>
-
-                                       
-                      <li class="menu-item has-sub">
-                        <a href="#" class="item-anchor d-flex align-item-center" data-effect="Pages">Aktivitas<i class="icon icon-chevron-down"></i></a>
-                        <ul class="submenu">
-                      
-                          <li><a href="umroh.html" class="item-anchor">umroh</a></li>
-                          <li><a href="luar-ruang.html" class="item-anchor">luar ruang</a></li>
-                          
-                        </ul>
-                      </li>
-
-                      
-                      <li class="menu-item has-sub">
-                        <a href="blog.html" class="item-anchor active d-flex align-item-center" data-effect="Blog">Blog</a>
-                        
-                      </li>
-
-                      <li><a href="contact.html" class="item-anchor" data-effect="Contact">Contact</a></li>
-
-                    </ul>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
+        <nav class="nav-menu">
+          <ul class="nav-list d-flex list-unstyled m-0">
+            <li><a href="index.html" class="nav-link">Beranda</a></li>
+            <li class="has-dropdown">
+              <a href="#" class="nav-link">Aktivitas <i class="fa fa-chevron-down"></i></a>
+              <ul class="dropdown-menu list-unstyled">
+                <li><a href="umroh.html">Umroh</a></li>
+                <li><a href="luar-ruang.html">Luar Ruang</a></li>
+                <li><a href="halal-tour.html">Halal Tour</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html" class="nav-link active">Blog</a></li>
+          </ul>
         </nav>
+        <div class="nav-action">
+          <a href="contact.html" class="btn-premium btn-primary-premium btn-small-nav">Hubungi Kami</a>
+        </div>
       </div>
     </header>
 
-    <section class="site-banner jarallax min-height300 padding-large" style="background: url(images/hero-image2.jpg) no-repeat; background-position: top;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 class="page-title">Blog page</h1>
-            <div class="breadcrumbs">
-              <span class="item">
-                <a href="index.html">Beranda /</a>
-              </span>
-              <span class="item">Blog</span>
-            </div>
-          </div>
-        </div>
+    <!-- Page Header -->
+    <section class="page-header-premium">
+      <img src="images/hero-image2.jpg" alt="Blog Banner" class="bg-img" onerror="this.src='images/main-banner.jpg'">
+      <div class="page-title-content">
+        <h1>Blog & Artikel</h1>
+        <p class="text-white" style="font-size: 1.2rem; opacity: 0.9;">Inspirasi, Tips, dan Cerita Perjalanan</p>
       </div>
     </section>
 
-    <section id="latest-blog" class="post-grid padding-large">
+    <section id="latest-blog" class="post-grid padding-premium" style="background-color: var(--light-bg);">
       <div class="container">
         <div class="row d-flex flex-wrap">
           <article class="col-md-4 post-item">
@@ -277,15 +249,9 @@
         </div>
         <nav class="navigation paging-navigation text-center padding-medium" role="navigation">
           <div class="pagination loop-pagination d-flex justify-content-center">
-            <a href="#" class="pagination-arrow d-flex align-items-center">
-              <i class="icon icon-arrow-left"></i>
-            </a>
             <span aria-current="page" class="page-numbers current">1</span>
             <a class="page-numbers" href="#">2</a>
             <a class="page-numbers" href="#">3</a>
-            <a href="#" class="pagination-arrow d-flex align-items-center">
-              <i class="icon icon-arrow-right"></i>
-            </a>
           </div>
         </nav>
       </div>
@@ -295,42 +261,75 @@
     
     
 
-    <div id="footer-bottom">
-      <div class="container">
-        <div class="d-flex align-items-center flex-wrap justify-content-between">
-          <div class="copyright">
-            <p>Modify With <i class="fa fa-heart pulse"></i> by <a href="https://fthykn.github.io/">fthykn</a> | Freebies by <a href="https://templatesjungle.com/">Templates Jungle</a> </p></a>
-            </p>
-          </div>
-          
-            <div class="social-links">
-              <ul class="d-flex list-unstyled">
-               
-                <li>
-                  <a href="#">
-                    <i class="icon icon-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="icon icon-youtube-play"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="icon icon-facebook"></i>
-                  </a>
-                </li>
-                
-              </ul>
+    <!-- Premium Footer -->
+    <footer class="footer-premium">
+      <div class="container footer-premium-top">
+        <div class="row">
+          <div class="col-md-4 footer-widget">
+            <div class="logo-wrap">
+              <img src="images/main-logo-light.png" alt="Rihlah Mulia Logo" onerror="this.src='images/main-logo.png'; this.style.filter='brightness(0) invert(1)';">
             </div>
-          
+            <p>Teman Rihlah siap menemani perjalanan ibadah dan petualangan Anda dengan pelayanan terbaik, amanah, dan sepenuh hati.</p>
+          </div>
+          <div class="col-md-4 footer-widget">
+            <h4 class="outfit-font">Kontak Kami</h4>
+            <ul class="footer-links">
+              <li><i class="fa fa-map-marker"></i> <span>Jl. Contoh Alamat No. 123, Jakarta</span></li>
+              <li><i class="fa fa-phone"></i> <span>+62 812 3456 7890</span></li>
+              <li><i class="fa fa-envelope"></i> <span>info@temanrihlah.com</span></li>
+            </ul>
+          </div>
+          <div class="col-md-4 footer-widget">
+            <h4 class="outfit-font">Tautan Penting</h4>
+            <ul class="footer-links">
+              <li><i class="fa fa-angle-right"></i> <a href="umroh.html">Paket Umroh</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="luar-ruang.html">Paket Luar Ruang</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="halal-tour.html">Halal Tour</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="blog.html">Artikel & Blog</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="footer-bottom-premium">
+        <div class="container">
+          <div class="footer-bottom-flex">
+            <div class="footer-copyright">
+              <p>© 2026 Teman Rihlah. All rights reserved.</p>
+            </div>
+            <ul class="footer-socials">
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      // Sticky header behavior
+      window.addEventListener('scroll', function() {
+        var header = document.getElementById('header');
+        if (window.scrollY > 50) {
+          header.style.padding = '8px 0';
+          header.style.background = 'rgba(255, 255, 255, 0.98)';
+          header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.08)';
+        } else {
+          header.style.padding = '15px 0';
+          header.style.background = 'rgba(255, 255, 255, 0.85)';
+          header.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+        }
+      });
+      // Mobile Menu Toggle
+      var menuToggle = document.querySelector('.menu-toggle');
+      if(menuToggle) {
+        menuToggle.addEventListener('click', function() {
+          document.querySelector('.nav-menu').classList.toggle('active');
+        });
+      }
+    </script>
   </body>
 </html>
